@@ -1,0 +1,4 @@
+#Tue Jul 02 16:26:08 PDT 2019
+base.0=/Users/luisrodz/Development/Android/Projects/Twitter/app/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

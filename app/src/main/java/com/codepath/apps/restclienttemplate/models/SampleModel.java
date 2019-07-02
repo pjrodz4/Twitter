@@ -7,8 +7,6 @@ import android.arch.persistence.room.PrimaryKey;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.List;
-
 /*
  * This is a temporary, sample model that demonstrates the basic structure
  * of a SQLite persisted Model object. Check out the Room guide for more details:
@@ -16,7 +14,7 @@ import java.util.List;
  *
  */
 @Entity
-public class SampleModel {
+public class  SampleModel {
 
 	@PrimaryKey(autoGenerate = true)
 	Long id;
