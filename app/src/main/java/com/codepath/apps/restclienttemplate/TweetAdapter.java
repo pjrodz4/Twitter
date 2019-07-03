@@ -51,7 +51,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         viewHolder.tvScreenName.setText("@" + tweet.user.screenName);
         viewHolder.tvScreenName.setTextColor(Color.GRAY);
 
-        viewHolder.tvTimeStamp.setText("· " + tweet.relativeTime);
+        viewHolder.tvTimeStamp.setText(tweet.relativeTime);
         viewHolder.tvTimeStamp.setTextColor(Color.GRAY);
 
         Glide.with(context).load(tweet.user.profileImageUrl).into(viewHolder.ivProfileImage);

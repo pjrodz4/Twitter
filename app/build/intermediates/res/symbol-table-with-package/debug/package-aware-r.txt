@@ -649,6 +649,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable ic_compose
 drawable ic_launcher
+drawable login_button
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -661,8 +662,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable signup_button
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable twitter_icon
 id ALT
 id CTRL
 id FUNCTION
@@ -698,7 +701,9 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnLogIn
 id btnSend
+id btnSignUp
 id buttonPanel
 id cancel_action
 id center
@@ -738,6 +743,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView4
 id info
 id invisible
 id italic
@@ -817,12 +823,15 @@ id top
 id topPanel
 id tvBody
 id tvCharCount
+id tvDescription
 id tvScreenName
 id tvTimeStamp
 id tvUserName
+id tvWelcome
 id uniform
 id up
 id useLogo
+id view
 id withText
 id wrap
 id wrap_content
