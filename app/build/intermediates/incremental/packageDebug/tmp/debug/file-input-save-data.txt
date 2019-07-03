@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jul 02 16:26:08 PDT 2019
+#Tue Jul 02 17:42:09 PDT 2019
 0.baseType=DIRECTORY
 0.base=/Users/luisrodz/Development/Android/Projects/Twitter/app/build/intermediates/dex/debug/mergeDexDebug/out
 0.path=classes.dex
