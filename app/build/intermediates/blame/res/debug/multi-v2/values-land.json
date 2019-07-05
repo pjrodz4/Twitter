@@ -4,6 +4,25 @@
             "outputFile": "/Users/luisrodz/Development/Android/Projects/Twitter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
+                    "source": "/Users/luisrodz/.gradle/caches/transforms-2/files-2.1/96e4905579fdff6be2390be6133bb161/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
+                    }
+                },
+                {
                     "source": "/Users/luisrodz/.gradle/caches/transforms-2/files-2.1/f676a88b29b1f3a98eea918d431b586b/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
