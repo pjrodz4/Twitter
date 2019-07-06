@@ -2,7 +2,7 @@
 
 **Twitter** is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-Time spent: **8** hours spent in total
+Time spent: **16** hours spent in total
 
 ## User Stories
 
@@ -21,14 +21,14 @@ The following **required** functionality is completed:
 The following **stretch** features are implemented:
 
 * [x] User can **see a counter with total number of characters left for tweet** on compose tweet page
-* [ ] User can **pull down to refresh tweets timeline**
+* [x] User can **pull down to refresh tweets timeline**
 * [x] User is using **"Twitter branded" colors and styles**
 * [x] User sees an **indeterminate progress indicator** when any background or network task is happening
 * [ ] User can **select "reply" from detail view to respond to a tweet**
   * [ ] User that wrote the original tweet is **automatically "@" replied in compose**
 * [ ] User can tap a tweet to **open a detailed tweet view**
   * [ ] User can **take favorite (and unfavorite) or reweet** actions on a tweet
-* [ ] User can **see embedded image media within a tweet** on list or detail view.
+* [x] User can **see embedded image media within a tweet** on list or detail view.
 
 The following **bonus** features are implemented:
 
