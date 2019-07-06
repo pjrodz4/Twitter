@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 
 import java.util.List;
@@ -38,7 +39,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
 
     // bind the values based on the position of the element
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+    public void onBindViewHolder(@NonNull final ViewHolder viewHolder, int i) {
         // get the data according to position
         Tweet tweet = mTweets.get(i);
 
@@ -54,7 +55,14 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         viewHolder.tvTimeStamp.setText(tweet.relativeTime);
         viewHolder.tvTimeStamp.setTextColor(Color.GRAY);
 
-        Glide.with(context).load(tweet.user.profileImageUrl).into(viewHolder.ivProfileImage);
+        Glide.with(context).load(tweet.user.profileImageUrl).apply(RequestOptions.circleCropTransform()).into(viewHolder.ivProfileImage);
+        if (tweet.hasEntities) {
+            String entityUrl = tweet.entity.loadUrl;
+            Glide.with(context).load(entityUrl).into(viewHolder.tweet_entity);
+            viewHolder.tweet_entity.setVisibility(View.VISIBLE);
+        } else {
+            viewHolder.tweet_entity.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -69,6 +77,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
          public TextView tvBody;
          public TextView tvScreenName;
          public TextView tvTimeStamp;
+         public ImageView tweet_entity;
 
          public ViewHolder(View itemView) {
              super(itemView);
@@ -79,6 +88,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
              tvBody = (TextView) itemView.findViewById(R.id.tvBody);
              tvScreenName = (TextView) itemView.findViewById(R.id.tvScreenName);
              tvTimeStamp = (TextView) itemView.findViewById(R.id.tvTimeStamp);
+             tweet_entity = (ImageView) itemView.findViewById(R.id.entity_tweet);
          }
     }
 }

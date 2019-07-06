@@ -1132,6 +1132,7 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id entity_tweet
 id etTweetInput
 id exitUntilCollapsed
 id expand_activities_button
@@ -1144,6 +1145,7 @@ id filled
 id fixed
 id forever
 id ghost_view
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups

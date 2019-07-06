@@ -67,15 +67,15 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504"
+        app:layout_constraintVertical_bias="1.0"
         tools:visibility="visible" />
 
     <ImageButton
@@ -83,14 +83,14 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginStart="50dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:background="@null"
         android:scaleType="fitXY"
         android:tint="#D3D3D3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnRetweet"
-        app:layout_constraintTop_toBottomOf="@+id/tvBody"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/entity_tweet"
+        app:layout_constraintVertical_bias="0.045"
         app:srcCompat="@drawable/ic_vector_heart_stroke" />
 
     <ImageButton
@@ -98,14 +98,14 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginStart="50dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:background="@null"
         android:scaleType="fitXY"
         android:tint="#D3D3D3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnReply"
-        app:layout_constraintTop_toBottomOf="@+id/tvBody"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/entity_tweet"
+        app:layout_constraintVertical_bias="0.027"
         app:srcCompat="@drawable/ic_vector_retweet_stroke" />
 
     <ImageButton
@@ -114,7 +114,6 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:adjustViewBounds="false"
         android:background="@null"
         android:baselineAlignBottom="false"
@@ -123,8 +122,21 @@
         android:tint="#D3D3D3"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
-        app:layout_constraintTop_toBottomOf="@+id/tvBody"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/entity_tweet"
+        app:layout_constraintVertical_bias="0.045"
         app:srcCompat="@drawable/ic_vector_reply" />
+
+    <ImageView
+        android:id="@+id/entity_tweet"
+        android:layout_width="302dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvBody"
+        app:srcCompat="@android:color/background_dark" />
 
 </android.support.constraint.ConstraintLayout>
