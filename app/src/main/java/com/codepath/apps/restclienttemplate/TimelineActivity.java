@@ -79,7 +79,6 @@ public class TimelineActivity extends AppCompatActivity {
                 android.R.color.holo_green_light,
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
-
     }
 
     public void fetchTimelineAsync(int page) {
@@ -92,7 +91,8 @@ public class TimelineActivity extends AppCompatActivity {
                 // Remember to CLEAR OUT old items before appending in the new ones
                 tweetAdapter.clear();
                 // ...the data has come back, add new items to your adapter...
-                tweetAdapter.addAll(tweets);
+//                tweetAdapter.addAll(tweets);
+                populateTimeline(maxId);
                 // Now we call setRefreshing(false) to signal refresh has finished
                 swipeContainer.setRefreshing(false);
             }
